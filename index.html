@@ -16,11 +16,10 @@
         .section { display: none; }
         .section.active { display: block; }
         .fuse-box { border: 3px solid #555; border-radius: 10px; padding: 20px; background: #2a2a2a; margin-bottom: 20px; }
-        .fuse-grid { display: grid; gap: 15px; justify-content: center; }
-        .left-section { display: grid; grid-template-columns: repeat(8, 1fr); gap: 3px; }
-        .right-section { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; margin-top: 15px; }
+        .fuse-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .left-section { display: grid; grid-template-columns: repeat(8, 1fr); gap: 9px; }
+        .right-section { display: grid; grid-template-columns: repeat(18, 1fr); grid-template-rows: repeat(2, 1fr); gap: 2px; }
         .fuse { aspect-ratio: 0.7; border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(8px, 2vw, 12px); color: #000; border-radius: 3px; min-height: 40px; }
-        .right-fuse { aspect-ratio: 0.6; border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(7px, 1.8vw, 10px); color: #000; border-radius: 3px; min-height: 35px; }
+        .right-fuse { border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(7px, 1.8vw, 10px); color: #000; border-radius: 3px; min-height: 55px; }
         .empty-fuse { background: #666 !important; color: #ccc !important; }
         .fuse-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #2a2a2a; }
         .fuse-table th { background: #3498db; color: white; padding: 12px 8px; text-align: left; font-weight: bold; border: 1px solid #2980b9; }
