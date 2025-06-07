@@ -17,6 +17,7 @@
         .section.active { display: block; }
         .fuse-box { border: 3px solid #555; border-radius: 10px; padding: 20px; background: #2a2a2a; margin-bottom: 20px; }
         .fuse-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .left-section { display: grid; grid-template-columns: repeat(8, 1fr); gap: 9px; }
+        .relay-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .left-section { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; }
         .right-section { display: grid; grid-template-columns: repeat(18, 1fr); grid-template-rows: repeat(2, 1fr); gap: 2px; }
         .fuse { aspect-ratio: 0.7; border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(8px, 2vw, 12px); color: #000; border-radius: 3px; min-height: 40px; }
         .right-fuse { border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(7px, 1.8vw, 10px); color: #000; border-radius: 3px; min-height: 55px; }
@@ -211,10 +212,61 @@
         </div>
 
         <div id="relaybox" class="section">
-            <div class="section-title">Relay Box</div>
-            <div class="note">
-                <strong>Coming Soon:</strong> Relay box diagram and specifications will be added here.
+            <div class="fuse-box">
+                <div class="relay-grid">
+                    <div class="left-section">
+                        <div class="fuse" style="background: #C62828;">R16</div>
+                        <div class="fuse" style="background: #3498DB;">R15</div>
+                        <div class="fuse empty-fuse" style="background: #2ECC71;">R14</div>
+                        <div class="fuse empty-fuse" style="background: #F39C12;">R13</div>
+                        <div class="fuse empty-fuse" style="background: #01579B;">R12</div>
+                        <div class="fuse" style="background: #1ABC9C;">R11</div>
+                        <div class="fuse" style="background: #E67E22;">R10</div>
+                        <div class="fuse empty-fuse" style="background: #34495E;">R9 | R8</div>
+                        <div class="fuse" style="background: #FF5722;">R7</div>
+                        <div class="fuse empty-fuse" style="background: #546E7A;">R6</div>
+                        <div class="fuse" style="background: #3F51B5;">R5</div>
+                        <div class="fuse" style="background: #2196F3;">R4</div>
+                        <div class="fuse empty-fuse" style="background: #546E7A;">R3</div>
+                        <div class="fuse" style="background: #4CAF50;">R2</div>
+                        <div class="fuse" style="background: #673AB7;">R1</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="note">
+                <strong>Note:</strong> Empty relays (R3, R6, R8, R9, R12, R13 and R14) are shown in gray. Colors in the diagram match the table below for easy identification.
+            </div>
+
+            <div class="section-title">Relays Specifications & Functions</div>
+            
+            <table class="fuse-table">
+                <thead>
+                    <tr>
+                        <th class="fuse-number">Relay</th>
+                        <th class="fuse-value">Model</th>
+                        <th class="fuse-description">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #673AB7;"></span>R1</td><td class="fuse-value">499</td><td class="fuse-description">Steering column lock</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #4CAF50;"></span>R2</td><td class="fuse-value">449</td><td class="fuse-description">Instrument panel</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #F39C12;"></span>R3</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #2196F3;"></span>R4</td><td class="fuse-value">449</td><td class="fuse-description">LH rear fog lamp</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #3F51B5;"></span>R5</td><td class="fuse-value">53</td><td class="fuse-description">Multifunction control module</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #E67E22;"></span>R6</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #FF5722;"></span>R7</td><td class="fuse-value">53</td><td class="fuse-description">Windshield washer pump</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #34495E;"></span>R8</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #34495E;"></span>R9</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #E67E22;"></span>R10</td><td class="fuse-value">643</td><td class="fuse-description"></td>   ???   </tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #1ABC9C;"></span>R11</td><td class="fuse-value">643</td><td class="fuse-description"></td>   ???   </tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #01579B;"></span>R12</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #F39C12;"></span>R13</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #2ECC71;"></span>R14</td><td class="fuse-value"></td><td class="fuse-description"></td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #3498DB;"></span>R15</td><td class="fuse-value">643</td><td class="fuse-description">Diagnostics, headlamp adjustment</td></tr>
+                    <tr><td class="fuse-number"><span class="color-indicator" style="background: #C62828;"></span>R16</td><td class="fuse-value">53</td><td class="fuse-description">Engine control module</td></tr>
+                </tbody>
+            </table>
         </div>
 
         <div id="vehicles" class="section">
