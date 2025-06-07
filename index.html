@@ -17,7 +17,7 @@
         .section.active { display: block; }
         .fuse-box { border: 3px solid #555; border-radius: 10px; padding: 20px; background: #2a2a2a; margin-bottom: 20px; }
         .fuse-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .left-section { display: grid; grid-template-columns: repeat(8, 1fr); gap: 9px; }
-        .relay-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .left-section { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; }
+        .relay-grid { display: flex; gap: 30px; justify-content: center; align-items: flex-start; }        .single-section { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; }
         .right-section { display: grid; grid-template-columns: repeat(18, 1fr); grid-template-rows: repeat(2, 1fr); gap: 2px; }
         .fuse { aspect-ratio: 0.7; border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(8px, 2vw, 12px); color: #000; border-radius: 3px; min-height: 40px; }
         .right-fuse { border: 2px solid #555; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: clamp(7px, 1.8vw, 10px); color: #000; border-radius: 3px; min-height: 55px; }
@@ -214,7 +214,7 @@
         <div id="relaybox" class="section">
             <div class="fuse-box">
                 <div class="relay-grid">
-                    <div class="left-section">
+                    <div class="single-section">
                         <div class="fuse" style="background: #C62828;">R16</div>
                         <div class="fuse" style="background: #3498DB;">R15</div>
                         <div class="fuse empty-fuse" style="background: #2ECC71;">R14</div>
