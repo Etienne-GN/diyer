@@ -55,12 +55,11 @@
     <div class="header">
         <div class="title">VW Jetta SE 2011</div>
         <nav class="nav">
-            <button class="nav-btn active" onclick="showSection('fusebox')">Fusebox</button>
+            <button class="nav-btn active" onclick="showSection('fusebox')">Fuse Box</button>
             <button class="nav-btn" onclick="showSection('relaybox')">Relay Box</button>
-            <button class="nav-btn" onclick="showSection('vehicles')">Other Vehicles</button>
+            <button class="nav-btn" onclick="showSection('enginebox')">Engine Box</button>
+            <button class="nav-btn" onclick="showSection('links')">Links</button>
         </nav>
-        <strong>Source: </strong>https://fuse-box.info/volkswagen/volkswagen-jetta-a6-2010-2017-fuses-and-relays#Fuse_Box_Diagram_-SC<br>
-        <strong>Source: </strong>https://fusesdiagram.com/volkswagen/fuses-and-relay-volkswagen-jetta-6.html
     </div>
 
     <div class="container">
@@ -271,13 +270,21 @@
             </table>
         </div>
 
-        <div id="vehicles" class="section">
-            <div class="section-title">Other Vehicles</div>
+        <div id="enginebox" class="section">
+            <div class="section-title">Engine Box</div>
             <div class="note">
                 <strong>Coming Soon:</strong> Additional vehicle fusebox diagrams will be added here.
             </div>
         </div>
     </div>
+
+        <div id="links" class="section">
+            <div class="section-title">Links</div>
+            <div class="note">
+                <strong>Source: </strong>https://fuse-box.info/volkswagen/volkswagen-jetta-a6-2010-2017-fuses-and-relays#Fuse_Box_Diagram_-SC<br>
+                <strong>Source: </strong>https://fusesdiagram.com/volkswagen/fuses-and-relay-volkswagen-jetta-6.html                
+            </div>
+        </div>
 
     <script>
         function showSection(sectionId) {
